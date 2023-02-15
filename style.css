@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+img{
+    width: 2000px;
+    position: absolute;
+    animation: animate 10s linear forwards;
+}
+@keyframes animate{
+    0%{
+        left: 100%;
+        width: 2000px;
+    }
+    90%{
+        left: -47%;
+        width: 2000px;
+    }
+    100%{
+        left: 0;
+        width: 100%;
+    }
+}
